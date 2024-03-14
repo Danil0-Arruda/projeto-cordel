@@ -1,17 +1,56 @@
+@charset "UTF-8";
 
-body{
-    background-color: #ffffff;
-    margin: 0%;
+* {
+    margin: 0;
+    padding: 0;
 }
-header{
+body {
+    background-color:#ffffff;
+}
+
+header {
     background-color: black;
     color: #ffffff;
     text-align: center;
-    padding: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
-header > h1{
+
+header>h1 {
     font-size: 50pt;
+    font-variant: small-caps;
 }
-header > p > a{
-    color : #ffffff;
+
+a{
+    color: #ffffff;
+    text-decoration: none;
 }
+a:hover{
+    text-decoration: underline;
+}
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
+}
+section.normal{
+    background-color: #ffffff;
+    color: black;
+}
+section.imagem{
+    background-color: darkslategray;
+    color:#ffffff;
+}
+section.imagem > p{
+    background-color: black;
+    width: 350px;
+}
+
+footer{
+    background-color: black;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+
