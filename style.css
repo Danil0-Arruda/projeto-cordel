@@ -2,17 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lilita+One&display=swap');
 
-:root{
+:root {
     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
-    --fonte2:"Lilita One", sans-serif;
-    --fonte3:"Kaushan Script", cursive;
+    --fonte2: "Lilita One", sans-serif;
+    --fonte3: "Kaushan Script", cursive;
 }
+
 * {
     margin: 0;
     padding: 0;
 }
+
 body {
-    background-color:#ffffff;
+    background-color: #ffffff;
     font-family: var(--fonte1);
 }
 
@@ -30,15 +32,17 @@ header>h1 {
     font-variant: small-caps;
 }
 
-a{
+a {
     color: #ffffff;
     text-decoration: none;
     font-weight: bolder;
 }
-a:hover{
+
+a:hover {
     text-decoration: underline;
 }
-section{
+
+section {
     font-family: var(--fonte3);
     font-size: 3.5vh;
     padding-top: 10vh;
@@ -46,23 +50,44 @@ section{
     padding-left: 30px;
     line-height: 2.3em;
 }
-section.normal{
+
+section.normal {
     background-color: #ffffff;
-    color: black;
-}
-section.imagem{
-    background-color: darkslategray;
-    color:#ffffff;
-}
-section.imagem > p{
-    background-color: black;
-    width: 350px;
+    color: rgb(0, 0, 0);
 }
 
-footer{
+section.imagem {
+    background-color: darkslategray;
+    color: #ffffff;
+    background-attachment: fixed;
+    box-shadow: inset 6px 6px 10px 0px rgba(0, 0, 0, 0.545);
+}
+
+section>p {
+    padding-bottom: 2em;
+}
+section#img01{
+    background-image: url(/imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+}
+section#img02{
+    background-image: url(/imagens/background002.jpg);
+    background-position: right center;
+    background-size: cover;
+}
+    
+section.imagem>p {
+    background-color: rgba(0, 0, 0, 0.395);
+    display: inline-block;
+    padding: 10px;
+    text-shadow: 1px 1px 1px black;
+}
+
+footer {
     background-color: black;
     color: #ffffff;
     text-align: center;
     padding: 10px;
+    font-size: 2.5vh;
 }
-
